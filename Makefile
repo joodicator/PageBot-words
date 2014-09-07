@@ -1,5 +1,5 @@
 not_bum_w_1000.txt: not_bum_w.txt
-	cat not_bum_w.txt | head -n1001 | tail -n1000 > not_bum_w_1000.txt
+	cat not_bum_w.txt | head -n1000 > not_bum_w_1000.txt
 
 not_bum_w.txt: not_bum.py bum_w.txt all_w.txt
 	./not_bum.py > not_bum_w.txt
