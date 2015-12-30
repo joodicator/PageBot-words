@@ -5,7 +5,7 @@ not_bum_w.txt: not_bum.py bum_w.txt all_w.txt
 	./not_bum.py > not_bum_w.txt
 
 bum.txt: src/bnc_all.num
-	grep -Pi "^\d+ [A-Z'-]+ (AJ0|NN0|NN1|NN2|VVB|VVI) \d+$$" \
+	grep -Pi "^\d+ ([A-Z'-]+ (AJ0|NN0|NN1|NN2|VVB|VVI|PNI|VBI|VDB|NP0)|(it|they|have) \S+) \d+$$" \
 	src/bnc_all.num > bum.txt
 
 bum_10000.txt: bum.txt
